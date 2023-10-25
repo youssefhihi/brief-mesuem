@@ -68,17 +68,18 @@
         <div class="input-step">
             <form action="">
               <div>
-                <input type="text" id="fullname" placeholder="Nom et Prenom" />
+                <input type="text" id="firstName" placeholder="Nom et Prenom" required pattern="[A-Za-z]{1,30}" title="nom et prenom et incorecte essayer de entrz encore">
                 
               </div>
               <div>
-                <input type="text" id="num" placeholder="Numero de téléphone" />
+                <input type="text" id="mobile" placeholder="Nombre de Telephone" required pattern="\d{10}" title="le numero de telephone et incorecte essayer de entrez encore">
+              </div>
+             
+              <div>
+                <input type="email"  id="email" placeholder="Email" required pattern="/^[a-zA-Z0-9]+@[a-z]+.com$/" title="Email incorecte essayer de entrez encore "/>
               </div>
               <div>
-                <input type="email"  id="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" id="cin"  placeholder="CIN" />
+                <input type="text" id="cin" placeholder="CIN" required pattern="\d{6}" title="CIM et incorecte essayer de entrez encore">
               </div>
               <div class="btn-01">
                 <input type="submit" value="envoyer" class="button"/><br>  
